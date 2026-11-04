@@ -1,4 +1,4 @@
-name: YouTube Video Search - FlashData
+name: YouTube Search
 on:
   workflow_dispatch: {}
 permissions:
@@ -7,15 +7,14 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Create a small video discovery dataset using a keyword and optional
-          duration or upload-date filters.
+      - name: YouTube Search
         id: data
-        uses: rocosen/flashdata-youtube-search-action@v0.1.0
+        uses: rocosen/flashdata-youtube-search-action@v0.1.1
         with:
           api-key: ${{ secrets.FLASHDATA_API_KEY }}
           query: RAG evaluation tutorials
           options-json: '{"max_results":5}'
-      - name: Save data for the next pipeline stage
+      - name: Upload results
         uses: actions/upload-artifact@v4
         with:
           name: youtube-search

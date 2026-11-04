@@ -1,6 +1,6 @@
-name: YouTube Video Search - FlashData
-description: Create a small video discovery dataset using a keyword and optional
-  duration or upload-date filters.
+name: YouTube Search
+description: Search YouTube by keyword with date and duration filters. Export up
+  to 20 results as JSON and JSONL.
 author: FlashData
 branding:
   icon: search
