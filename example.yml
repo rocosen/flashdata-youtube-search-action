@@ -1,4 +1,4 @@
-name: YouTube Search
+name: YouTube Search Results
 on:
   workflow_dispatch: {}
 permissions:
@@ -7,7 +7,7 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: YouTube Search
+      - name: YouTube Search Results
         id: data
         uses: rocosen/flashdata-youtube-search-action@v0.1.1
         with:

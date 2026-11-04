@@ -1,4 +1,4 @@
-# YouTube Search
+# YouTube Search Results
 
 Search YouTube by keyword with date and duration filters. Export up to 20 results as JSON and JSONL.
 
@@ -9,7 +9,7 @@ Powered by the [FlashData YouTube Search API](https://flashdata.dev/docs/sources
 Add a [FlashData API key](https://flashdata.dev/signup) as the repository secret `FLASHDATA_API_KEY`. API calls require FlashData Credits ([pricing](https://flashdata.dev/pricing)). Then add this workflow:
 
 ```yaml
-name: YouTube Search
+name: YouTube Search Results
 on:
   workflow_dispatch: {}
 permissions:
@@ -18,7 +18,7 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: YouTube Search
+      - name: YouTube Search Results
         id: data
         uses: rocosen/flashdata-youtube-search-action@v0.1.1
         with:

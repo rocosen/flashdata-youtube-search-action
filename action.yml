@@ -1,4 +1,4 @@
-name: YouTube Search
+name: YouTube Search Results
 description: Search YouTube by keyword with date and duration filters. Export up
   to 20 results as JSON and JSONL.
 author: FlashData
