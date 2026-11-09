@@ -2,11 +2,11 @@
 
 Search YouTube by keyword with date and duration filters. Export up to 20 results as JSON and JSONL.
 
-Powered by the [FlashData YouTube Search API](https://flashdata.dev/docs/sources/youtube_search). The requested count is a ceiling, not a guaranteed result count.
+Powered by the [FlashData YouTube Search API](https://flashdata.dev/docs/sources/youtube_search?utm_source=github-actions&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task). The requested count is a ceiling, not a guaranteed result count.
 
 ## Quick start
 
-Add a [FlashData API key](https://flashdata.dev/signup) as the repository secret `FLASHDATA_API_KEY`. API calls require FlashData Credits ([pricing](https://flashdata.dev/pricing)). Then add this workflow:
+Add a [FlashData API key](https://flashdata.dev/signup?utm_source=github-actions&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task) as the repository secret `FLASHDATA_API_KEY`. API calls require FlashData Credits ([pricing](https://flashdata.dev/pricing?utm_source=github-actions&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task)). Then add this workflow:
 
 ```yaml
 name: YouTube Search Results
@@ -71,9 +71,9 @@ Empty results produce an empty JSONL file and `result-count: 0`. Optional fields
 
 ## Pricing and errors
 
-The action is free to install. FlashData API calls use paid Credits; GitHub runner/artifact costs are separate. [Current pricing](https://flashdata.dev/pricing).
+The action is free to install. FlashData API calls use paid Credits; GitHub runner/artifact costs are separate. [Current pricing](https://flashdata.dev/pricing?utm_source=github-actions&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task).
 
-401: check the API key. 402: add Credits. 429: rate/quota limit. After a timeout, check [FlashData Jobs](https://flashdata.dev) before rerunning: a request may already have been accepted. Paid POST requests are not retried. Requests have a 65-second timeout and a 16-MiB response limit.
+401: check the API key. 402: add Credits. 429: rate/quota limit. After a timeout, check [FlashData Jobs](https://flashdata.dev?utm_source=github-actions&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task) before rerunning: a request may already have been accepted. Paid POST requests are not retried. Requests have a 65-second timeout and a 16-MiB response limit.
 
 ## Development
 
